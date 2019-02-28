@@ -1,0 +1,66 @@
+<html>
+
+<head>
+</head>
+
+<body>
+
+
+
+
+  <button onclick="firstForFunction()">Click</button>
+
+  <div id="Zodiac"></div>
+
+<script>
+
+var listOfStates = [
+  "Aries",
+  "Gemini",
+  "Leo",
+  "Libra",
+  "Taurus",
+  "Saggitarius",
+  "Capricorn",
+  "Pisces",
+  "Cancer",
+  "Aquarius",
+  "Scorpio",
+  "Virgo",
+  
+
+
+]
+
+
+// My First while loop
+
+function firstForFunction() {
+  var someStates ="";
+  for(i=0; i < listOfStates.length; i++) {
+    //alert(listOfStates[i]);
+    someStates += "<br>" + listOfStates[i];
+    document.getElementById("USStates").innerHTML = someStates;
+
+
+  }
+
+}
+
+function firstForInFunction() {
+  var someStates ="";
+  for(x in listOfStates){
+    someStates += "<br>" + listOfStates[state];
+    document.getElementById("USStates").innerHTML = someStates;
+  }
+
+}
+
+
+</script>
+
+</body>
+
+<button onclick="firstWhile()">iterate</button>
+
+</html>

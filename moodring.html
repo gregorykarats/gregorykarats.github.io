@@ -1,0 +1,116 @@
+<html>
+
+<head>
+
+<style>
+     
+body {
+	background-color: #FFF222;
+}
+
+</style>
+
+</head>
+
+<body>
+
+	<center>
+
+	<h1>MOODY METER</h1>
+
+	<button id="moodButton" onclick="changeMood()" value="0">Change my mood</button>
+
+	<div id="moodStatement">HAPPY!!!</div>
+
+</center>
+
+
+<script>
+text =""
+function changeMood(){
+	button = document.getElementById("moodButton")
+	if (button.value == '0') {
+		text ="GLOOMY ://";
+		document.getElementById('moodStatement').innerHTML = text
+		document.body.style.backgroundColor = "96A3A1";
+		button.value = '1';
+	}
+	else if (button.value == '1') {
+
+		text = "PEACEFUL";
+		document.getElementById('moodStatement').innerHTML = text;
+				document.body.style.backgroundColor = "#5EC9E8";
+		button.value = '2';
+
+		}
+	else if (button.value == '2') {
+
+		text = "ANGRY!!!!!!!";
+		document.getElementById('moodStatement').innerHTML = text;
+				document.body.style.backgroundColor = "#E82C0C";
+		button.value = '3';
+
+		}
+	else if (button.value == '3') {
+
+		text = "Romantic ;)";
+		document.getElementById('moodStatement').innerHTML = text;
+				document.body.style.backgroundColor = "#FF00AA";
+		button.value = '4';
+
+			}
+
+	else if (button.value == '4') {
+
+		text = "SPITEFUL!";
+		document.getElementById('moodStatement').innerHTML = text;
+				document.body.style.backgroundColor = "#47453D";
+		button.value = '5';
+
+				}
+
+	else if (button.value == '5') {
+
+		text = "Sentimental";
+		document.getElementById('moodStatement').innerHTML = text;
+				document.body.style.backgroundColor = "#C481FF";
+		button.value = '6';
+
+	}
+
+	else if (button.value == '6') {
+
+		text = "DISGUSTED";
+		document.getElementById('moodStatement').innerHTML = text;
+				document.body.style.backgroundColor = "#61561A";
+		button.value = '7';
+
+	}
+
+	else if (button.value == '7') {
+
+		text = "Lucky";
+		document.getElementById('moodStatement').innerHTML = text;
+				document.body.style.backgroundColor = "#1B8800";
+		button.value = '8';
+
+	}
+
+	else {
+		text = "HAPPY!!!";
+		document.getElementById('moodStatement').innerHTML = text;
+				document.body.style.backgroundColor = "#FFF222";
+		button.value = '0';
+
+
+
+      
+
+
+	}
+}
+
+
+</script>
+</body>
+</html>
