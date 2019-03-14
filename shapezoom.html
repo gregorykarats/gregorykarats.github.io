@@ -14,7 +14,7 @@
       }
     </style>
 
-    <!--<input type="button" name="Ignore Select" value="Ignore Select" id="color" onclick="colorchange('color')" style="background:rgb(255,145,0);"/>-->
+    <input type="button" name="Ignore Select" value="Ignore Select" id="color" onclick="colorchange('color')" style="background:rgb(255,145,0);"/>
 
 
   <body>
@@ -93,7 +93,16 @@ function () {
       function colorchange(color)
 {
 
- 
+  var background = document.getElementById(color).style.background;
+
+  if(background = "rgb(255,145,0)")
+  {
+  document.getElementById(color).style.background = "rgb(26,255,0)";
+  }
+  if(background == "rgb(26,255,0)")
+  {
+    document.getElementById(color).style.background = "rgb(255,145,0)";
+  }
 function changecolor(color){
   if (color == 1){
   color ="red" ;
