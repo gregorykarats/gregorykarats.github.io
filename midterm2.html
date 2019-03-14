@@ -74,7 +74,7 @@
         this.x += this.vx;
         this.y += this.vy;
         
-        // Give the particle some bounce
+        // particle bounce
         if (this.y > settings.bounceLevel) {
           this.vy *= -0.6;
           this.vx *= 0.75;
